@@ -1,0 +1,51 @@
+# ── Dependencies ─────────────────────────────
+node_modules/
+
+# ── Build outputs ────────────────────────────
+dist/
+build/
+.vite/
+
+# ── Environment variables ────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── TypeScript ───────────────────────────────
+*.tsbuildinfo
+
+# ── Logs ─────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Package managers ─────────────────────────
+.yarn-integrity
+.pnpm-debug.log
+
+# ── OS files ─────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── IDE ──────────────────────────────────────
+.idea/
+*.sublime-workspace
+
+# ── Temp / cache ─────────────────────────────
+.cache/
+.parcel-cache/
+.eslintcache
+tmp/
+temp/
+
+# ── Archive files ─────────────────────────────
+*.zip
+*.tar.gz
+*.rar
+
+# ── Keep these ────────────────────────────────
+!.gitignore
+!.env.example
