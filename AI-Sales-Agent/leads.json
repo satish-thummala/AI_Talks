@@ -1,0 +1,15 @@
+[
+    {
+        "customer_need": "Automate customer support to reduce response time and handle a large volume of support requests.",
+        "recommended_product": "AI Support Platform",
+        "lead_score": 85,
+        "lead_category": "HOT",
+        "reason": "John's company TechNova (120 employees) explicitly wants to automate customer support and cut response times, which aligns perfectly with the AI Support Platform's core features (AI\u2011driven conversations, automated responses, knowledge\u2011base integration, 24/7 availability). The company size fits the product's target market (mid\u2011size firms with many support tickets) and the budget for a $499/month solution is realistic. The clear, urgent need and strong product\u2011fit earn a high score.",
+        "next_action": "Email John a personalized overview of the AI Support Platform, attach the product brochure, and propose a live demo call within the next two business days.",
+        "sales_email": "Subject: Reduce TechNova\u2019s Support Response Time with AI\u2011Powered Automation\n\nHi John,\n\nThanks for reaching out! I understand TechNova is looking to automate your customer support and shorten response times \u2013 a challenge many fast\u2011growing software companies face.\n\nOur AI Support Platform is built exactly for that. It can:\n\u2022 Automatically handle routine inquiries 24/7, freeing your support team for complex issues.\n\u2022 Provide instant, accurate answers by integrating with your existing knowledge base.\n\u2022 Keep a full conversation history and deliver analytics so you can continuously improve service.\n\nAll of this comes at a predictable $499 per month, with no hidden fees.\n\nI\u2019d love to show you how it works in a short, 30\u2011minute live demo tailored to TechNova\u2019s workflow. Are you available on Tuesday or Wednesday afternoon?\n\nLooking forward to helping TechNova deliver faster, smarter support.\n\nBest regards,\n[Your Name]\nSales Engineer, AI Solutions\nPhone: [Your Phone]\nEmail: [Your Email]",
+        "name": "John Smith",
+        "email": "john@technova.com",
+        "company": "TechNova",
+        "processed_at": "2026-08-26T19:20:13.178692"
+    }
+]

@@ -1,0 +1,70 @@
+Company: AI Solutions
+
+We provide AI-powered software solutions for businesses.
+
+--------------------------------------------------
+Product: AI Support Platform
+--------------------------------------------------
+
+Description:
+An AI-powered customer support platform that helps businesses
+automate customer conversations and reduce support workload.
+
+Best For:
+Companies that receive a large number of customer support requests.
+
+Features:
+- AI customer support
+- Automated responses
+- Knowledge base integration
+- Customer conversation history
+- Support analytics
+- 24/7 availability
+
+Pricing:
+$499 per month
+
+--------------------------------------------------
+Product: AI Sales Assistant
+--------------------------------------------------
+
+Description:
+An AI-powered sales assistant that helps sales teams qualify
+leads, generate personalized emails, and automate follow-ups.
+
+Best For:
+Companies with sales teams that manage large numbers of leads.
+
+Features:
+- Lead qualification
+- Lead scoring
+- Personalized sales emails
+- Automated follow-ups
+- Sales analytics
+- CRM integration
+
+Pricing:
+$699 per month
+
+--------------------------------------------------
+Product: AI Enterprise Platform
+--------------------------------------------------
+
+Description:
+A complete AI automation platform designed for larger
+organizations with complex AI requirements.
+
+Best For:
+Medium and large businesses that need multiple AI automation
+workflows.
+
+Features:
+- Custom AI agents
+- Multiple AI workflows
+- Advanced analytics
+- Enterprise integrations
+- Custom knowledge bases
+- Priority support
+
+Pricing:
+Starting at $1,999 per month
