@@ -1,7 +1,6 @@
 from sales_agent import process_lead
 
 
-# New sales lead
 lead = {
     "name": "John Smith",
     "email": "john@technova.com",
@@ -13,37 +12,27 @@ lead = {
 }
 
 
-# Send the lead to our AI Sales Employee
+print("\n")
+print("=" * 60)
+print("AI SALES EMPLOYEE")
+print("=" * 60)
+
+print("\nNew lead received:")
+print(f"Name: {lead['name']}")
+print(f"Company: {lead['company']}")
+print(f"Interest: {lead['interest']}")
+
+print("\nProcessing lead...")
+
 result = process_lead(lead)
 
 
-# Display the result
-print("\n" + "=" * 60)
-print("AI SALES EMPLOYEE RESULT")
+print("\n")
+print("=" * 60)
+print("FINAL AI SALES EMPLOYEE REPORT")
 print("=" * 60)
 
-print(f"\nLead: {lead['name']}")
-print(f"Company: {lead['company']}")
+print(result)
 
-print(f"\nLead Score: {result['lead_score']}/100")
-print(f"Lead Category: {result['lead_category']}")
-
-print(f"\nCustomer Need:")
-print(result["customer_need"])
-
-print(f"\nRecommended Product:")
-print(result["recommended_product"])
-
-print(f"\nReason:")
-print(result["reason"])
-
-print(f"\nRecommended Next Action:")
-print(result["next_action"])
-
-print("\n" + "-" * 60)
-print("PERSONALIZED SALES EMAIL")
-print("-" * 60)
-
-print(result["sales_email"])
-
-print("\n" + "=" * 60)
+print("\n")
+print("=" * 60)

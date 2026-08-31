@@ -11,5 +11,14 @@
         "email": "john@technova.com",
         "company": "TechNova",
         "processed_at": "2026-08-26T19:20:13.178692"
+    },
+    {
+        "company": "TechNova",
+        "email": "john@technova.com",
+        "lead_category": "HOT",
+        "lead_score": 80,
+        "name": "John Smith",
+        "next_action": "Schedule product demo for AI Support Platform",
+        "processed_at": "2026-08-31T17:12:03.685263"
     }
 ]
