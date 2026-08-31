@@ -78,3 +78,64 @@ def save_lead(lead):
         )
 
     print("\nLead successfully saved.")
+
+
+def send_email(to, subject, body):
+    """
+    Simulate sending an email to a sales lead.
+    """
+
+    print("\n" + "-" * 60)
+    print("EMAIL SENT")
+    print("-" * 60)
+
+    print(f"To: {to}")
+    print(f"Subject: {subject}")
+    print("\n" + body)
+
+    return {
+        "status": "success",
+        "message": f"Email sent successfully to {to}"
+    }
+
+
+def schedule_meeting(name, email, date, time):
+    """
+    Simulate scheduling a sales meeting.
+    """
+
+    print("\n" + "-" * 60)
+    print("MEETING SCHEDULED")
+    print("-" * 60)
+
+    print(f"Customer: {name}")
+    print(f"Email: {email}")
+    print(f"Date: {date}")
+    print(f"Time: {time}")
+
+    return {
+        "status": "success",
+        "message": f"Meeting scheduled with {name}",
+        "date": date,
+        "time": time
+    }
+
+
+def update_crm(name, company, status, notes):
+    """
+    Simulate updating our CRM.
+    """
+
+    print("\n" + "-" * 60)
+    print("CRM UPDATED")
+    print("-" * 60)
+
+    print(f"Name: {name}")
+    print(f"Company: {company}")
+    print(f"Status: {status}")
+    print(f"Notes: {notes}")
+
+    return {
+        "status": "success",
+        "message": f"CRM updated for {company}"
+    }

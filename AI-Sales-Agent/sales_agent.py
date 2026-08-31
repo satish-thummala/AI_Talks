@@ -7,7 +7,10 @@ from dotenv import load_dotenv
 from tools import (
     load_products,
     score_lead,
-    save_lead
+    save_lead,
+    send_email,
+    schedule_meeting,
+    update_crm
 )
 
 
@@ -110,6 +113,101 @@ tools = [
                 ]
             }
         }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "send_email",
+            "description": "Send a personalized sales email to a lead.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "to": {
+                        "type": "string",
+                        "description": "Customer email address"
+                    },
+                    "subject": {
+                        "type": "string",
+                        "description": "Email subject"
+                    },
+                    "body": {
+                        "type": "string",
+                        "description": "Email body"
+                    }
+                },
+                "required": [
+                    "to",
+                    "subject",
+                    "body"
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "schedule_meeting",
+            "description": "Schedule a sales meeting with a qualified lead.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Customer name"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "Customer email"
+                    },
+                    "date": {
+                        "type": "string",
+                        "description": "Meeting date"
+                    },
+                    "time": {
+                        "type": "string",
+                        "description": "Meeting time"
+                    }
+                },
+                "required": [
+                    "name",
+                    "email",
+                    "date",
+                    "time"
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "update_crm",
+            "description": "Update the CRM with the lead's current sales status and notes.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "company": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string",
+                        "description": "Sales status such as HOT, WARM or COLD"
+                    },
+                    "notes": {
+                        "type": "string",
+                        "description": "Notes about the lead"
+                    }
+                },
+                "required": [
+                    "name",
+                    "company",
+                    "status",
+                    "notes"
+                ]
+            }
+        }
     }
 ]
 
@@ -141,12 +239,38 @@ def execute_tool(tool_name, arguments):
             "message": "Lead saved successfully."
         }
 
+    elif tool_name == "send_email":
+
+        return send_email(
+            to=arguments["to"],
+            subject=arguments["subject"],
+            body=arguments["body"]
+        )
+
+    elif tool_name == "schedule_meeting":
+
+        return schedule_meeting(
+            name=arguments["name"],
+            email=arguments["email"],
+            date=arguments["date"],
+            time=arguments["time"]
+        )
+
+    elif tool_name == "update_crm":
+
+        return update_crm(
+            name=arguments["name"],
+            company=arguments["company"],
+            status=arguments["status"],
+            notes=arguments["notes"]
+        )
+
     else:
 
         return {
             "error": f"Unknown tool: {tool_name}"
         }
-
+    
 
 # --------------------------------------------------
 # AI SALES EMPLOYEE
@@ -157,29 +281,48 @@ def process_lead(lead):
     system_prompt = """
 You are an AI Sales Employee.
 
-Your job is to process incoming sales leads.
+Your job is to process incoming sales leads and help move
+qualified leads through the sales process.
 
 You have access to tools that allow you to:
 
 - Read company product information
 - Score sales leads
 - Save leads to the CRM
+- Send sales emails
+- Schedule sales meetings
+- Update the CRM
 
-You should decide when to use these tools.
+You should decide which tools are necessary based on the lead.
 
-Your workflow should be:
+Follow this workflow:
 
 1. Understand the lead.
 2. Read the product information.
 3. Score the lead.
 4. Identify the best product.
-5. Recommend the next sales action.
-6. Write a personalized sales email.
-7. Save the lead information.
+5. Decide the appropriate next action.
+
+If the lead is HOT:
+- Send a personalized sales email.
+- Recommend or schedule a sales meeting.
+- Update the CRM as HOT.
+
+If the lead is WARM:
+- Send a personalized follow-up email.
+- Update the CRM as WARM.
+
+If the lead is COLD:
+- Save the lead.
+- Update the CRM as COLD.
+- Do not schedule a meeting.
 
 Do not invent product features or pricing.
 
-Once you have completed the workflow, provide a clear summary.
+Use the available tools whenever an action is required.
+
+After completing the necessary actions, provide a clear summary
+of what you did.
 """
 
     messages = [
