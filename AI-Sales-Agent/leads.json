@@ -20,5 +20,23 @@
         "name": "John Smith",
         "next_action": "Schedule product demo for AI Support Platform",
         "processed_at": "2026-08-31T17:12:03.685263"
+    },
+    {
+        "company": "TechNova",
+        "email": "john@technova.com",
+        "lead_category": "HOT",
+        "lead_score": 80,
+        "name": "John Smith",
+        "next_action": "Email sent and meeting scheduled",
+        "processed_at": "2026-09-01T13:27:59.282525"
+    },
+    {
+        "company": "SmallShop",
+        "email": "sarah@smallshop.com",
+        "lead_category": "COLD",
+        "lead_score": 20,
+        "name": "Sarah Johnson",
+        "next_action": "Follow up later",
+        "processed_at": "2026-09-01T13:28:14.324402"
     }
 ]
