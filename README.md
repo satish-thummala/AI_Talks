@@ -1,6 +1,6 @@
-AI\_Talks
+AI_Talks
 
 
 
-AI\_Talks is an you tube channel, https://www.youtube.com/@AI\_Talks\_TSB. The work generally talked in the videos is committed here.
+AI_Talks is an you tube channel, https://www.youtube.com/@AI_Talks_TSB. The work generally talked in the videos is committed here.
 
