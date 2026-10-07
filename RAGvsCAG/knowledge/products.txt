@@ -1,0 +1,19 @@
+TechNova Products
+
+TechNova offers three main products.
+
+TechNova Flow is a workflow automation platform that helps businesses
+automate repetitive tasks and connect different applications.
+
+TechNova Assist is an AI-powered business assistant that can answer
+questions, summarize documents, and help employees find information.
+
+TechNova Analytics is a business analytics platform that allows
+companies to create dashboards and analyze business data.
+
+TechNova Flow is available in Basic, Professional, and Enterprise
+plans.
+
+TechNova Assist is available in Professional and Enterprise plans.
+
+TechNova Analytics is available in Basic and Enterprise plans.
