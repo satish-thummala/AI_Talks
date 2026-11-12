@@ -1,0 +1,9 @@
+OrderID,Date,Region,Product,Quantity,Revenue
+ORD001,2026-10-01,North,Laptop,1,4000
+ORD002,2026-10-02,North,Monitor,1,1800
+ORD003,2026-10-03,South,Laptop,1,4000
+ORD004,2026-10-04,South,Office Chair,1,1000
+ORD005,2026-10-05,East,Keyboard,1,500
+ORD006,2026-10-06,East,Office Desk,1,1000
+ORD007,2026-10-07,West,Monitor,1,500
+ORD008,2026-10-08,West,Office Chair,1,1000
